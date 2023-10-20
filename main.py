@@ -24,11 +24,5 @@ def post(id):
     print(specific_post.title)
     return render_template("post.html", post=specific_post)
 
-
-@app.route('/login')
-def login():
-    return render_template("login.html")
-
-
 if __name__ == "__main__":
     app.run(debug=True)
